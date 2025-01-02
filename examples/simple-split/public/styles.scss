@@ -1,16 +1,34 @@
+body {
+  background-color: #1f1f1f;
+}
+
 .container {
-  width: 80%;
+  margin-top: 50px;
+  width: 850px;
   height: 500px;
-  left: auto;
-  right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 5px solid #828282;
+  filter: drop-shadow(5px 5px 10px #000000);
 }
 
 .first {
-  background-color: #78acff;
+  color: #e0e0e0;
+  font-family: sans-serif;
+  padding: 1.5rem;
+  background-color: #1f1f1f;
 }
 
 .second {
-  background-color: #ff7878;
+  background-image: url("https://picsum.photos/2044/1242");
+  position: sticky;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .handle {
