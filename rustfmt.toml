@@ -1,0 +1,22 @@
+# Allow using more configuration options
+unstable_features = true
+edition = "2021"
+
+# Limit document line length to 80
+max_width = 80
+comment_width = 80
+
+# Always use 2 spaces
+tab_spaces = 2
+
+# Re-format comments
+wrap_comments = true
+
+condense_wildcard_suffixes = true
+force_explicit_abi = true
+format_code_in_doc_comments = true
+format_strings = true
+reorder_imports = true
+group_imports = "StdExternalCrate"
+reorder_modules = true
+use_try_shorthand = true
