@@ -6,6 +6,7 @@ description = "Simple user-resizable split view for Leptos"
 license = "MIT"
 repository = "https://github.com/zortax/leptos-resize"
 authors = ["Leonard Seibold <git@zrtx.de>"]
+exclude = ["preview.gif"]
 
 [dependencies]
 leptos = { version = "0.7", default-features = false }
