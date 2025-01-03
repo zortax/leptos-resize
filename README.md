@@ -15,7 +15,7 @@ fn MyComponent() -> impl IntoView {
   }
 }
 ```
-(See examples directory for a full CSR example)
+(See `examples` directory for a full CSR example)
 
 ## Leptos compatibility
 
@@ -25,6 +25,6 @@ fn MyComponent() -> impl IntoView {
 
 ## Features
 
-- Horizontal and vertival split
+- Horizontal and vertical split
 - Split ration can be bound to `RwSignal`
 - works with server-side rendering
