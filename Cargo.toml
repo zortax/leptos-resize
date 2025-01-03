@@ -1,7 +1,11 @@
 [package]
 name = "leptos-resize"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+description = "Simple user-resizable split view for Leptos"
+license = "MIT"
+repository = "https://github.com/zortax/leptos-resize"
+authors = ["Leonard Seibold <git@zrtx.de>"]
 
 [dependencies]
 leptos = { version = "0.7", default-features = false }
@@ -13,7 +17,3 @@ web-sys = { version = "0.3", default-features = false, features = [
   "DomRect",
   "Element",
 ] }
-
-[features]
-default = []
-ssr = []
