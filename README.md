@@ -6,6 +6,7 @@ This crate provides a simple user-resizable split container for the Leptos web
 framework. Horizontal and vertical splits are both supported.
 
 ```rust
+#[component]
 fn MyComponent() -> impl IntoView {
   view! {
     <ResizableSplit>
