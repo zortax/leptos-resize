@@ -27,5 +27,5 @@ fn MyComponent() -> impl IntoView {
 ## Features
 
 - Horizontal and vertical split
-- Split ration can be bound to `RwSignal`
+- Split ratio can be bound to `RwSignal`
 - works with server-side rendering
