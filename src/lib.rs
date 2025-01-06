@@ -28,7 +28,7 @@ pub enum SplitDirection {
 /// }
 /// ```
 #[component]
-pub fn ResizableSplit(
+pub fn ResizableSplit<const SPLIT_N: usize>(
   /// The direction of the split.
   #[prop(into, optional)]
   direction: SplitDirection,
@@ -39,8 +39,8 @@ pub fn ResizableSplit(
   #[prop(into, optional)]
   handle_class: TextProp,
   /// The percentage of the first split half. Will update on resize.
-  #[prop(optional, default = RwSignal::new(50f64))]
-  col: RwSignal<f64>,
+  #[prop(optional, default = RwSignal::new([100.0f64 / SPLIT_N; SPLIT_N]))]
+  col: RwSignal<[f64; SPLIT_N]>,
   children: Children,
 ) -> impl IntoView {
   let container = NodeRef::<Div>::new();
