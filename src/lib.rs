@@ -1,12 +1,14 @@
+#![doc = include_str!("../README.md")]
+
 use leptos::{ev, html::Div, prelude::*, text_prop::TextProp};
 
 /// Enum representing the direction of the split.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SplitDirection {
-  /// Split the container horizontally.
+  /// Split the container vertically.
   #[default]
   Row,
-  /// Split the container vertically.
+  /// Split the container horizontally.
   Column,
 }
 
@@ -36,7 +38,7 @@ pub fn ResizableSplit(
   direction: SplitDirection,
   /// The class property for the underlying grid.
   #[prop(into, optional)]
-  grid_class: TextProp,
+  class: TextProp,
   /// The class property for the resize handle.
   #[prop(into, optional)]
   handle_class: TextProp,
@@ -166,7 +168,7 @@ pub fn ResizableSplit(
   view! {
     <div
       node_ref=container
-      class=move || grid_class.get()
+      class=move || class.get()
       style:position="relative"
       on:mousemove=on_mouse_move
       on:mouseleave=stop_resize
