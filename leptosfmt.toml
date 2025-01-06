@@ -1,0 +1,10 @@
+max_width = 100
+tab_spaces = 2
+indentation_style = "Spaces"
+newline_style = "Auto"
+attr_value_brace_style = "WhenRequired"
+macro_names = ["leptos::view", "view"]
+closing_tag_style = "Preserve"
+
+[attr_values]
+class = "Tailwind"

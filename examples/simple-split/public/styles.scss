@@ -31,6 +31,16 @@ body {
   background-repeat: no-repeat;
 }
 
+.third {
+  background-image: url("https://picsum.photos/2044/1243");
+  position: sticky;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .handle {
   background-color: transparent;
 }
