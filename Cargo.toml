@@ -1,6 +1,6 @@
 [package]
 name = "leptos-resize"
-version = "0.2.0"
+version = "0.3.0"
 edition = "2021"
 description = "Simple user-resizable split view for Leptos"
 license = "MIT"
@@ -9,7 +9,7 @@ authors = ["Leonard Seibold <git@zrtx.de>"]
 exclude = ["preview.gif"]
 
 [dependencies]
-leptos = { version = "0.7", default-features = false }
+leptos = { version = "0.8", default-features = false }
 web-sys = { version = "0.3", default-features = false, features = [
   "Document",
   "Window",
