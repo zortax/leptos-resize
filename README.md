@@ -23,6 +23,7 @@ fn MyComponent() -> impl IntoView {
 | Crate version | Compatible Leptos version |
 |---------------|---------------------------|
 | 0.1 - 0.2     | 0.7                       |
+| 0.3           | 0.8                       |
 
 ## Features
 
